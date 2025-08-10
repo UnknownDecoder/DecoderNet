@@ -1,0 +1,14 @@
+name: Unzip repo file
+
+on:
+  workflow_dispatch:  # run manually
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Unzip file
+        run: unzip My-Portfolio-main.zip
