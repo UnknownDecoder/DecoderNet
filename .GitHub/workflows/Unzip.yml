@@ -1,7 +1,7 @@
 name: Unzip and commit to repo
 
 on:
-  workflow_dispatch:
+  push:
 
 permissions:
   contents: write  # important for pushing
